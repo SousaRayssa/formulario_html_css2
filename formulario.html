@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <main>
+        <div class="campo">
+            <h1 id="titulo">Formulario</h1>
+            <p id="subtitulo">Preencha todos os campos corretamente com suas informações.</p>
+            <br>
+        </div>
+        <form action="">
+            <fieldset class="grupo">
+                <div>
+                    <label for="Nome"><strong>Nome</strong></label><br>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <br>
+                <div>
+                    <label for="Sobrenome"><strong>Sobrenome</strong></label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+    <br>
+            <div class="campo">
+                <label for="Email"><strong>Email</strong></label><br>
+                <input type="email" name="email" id="email" required>
+            </div>
+    <br>
+            <div class="campo">
+              <label for="Genero"><strong>qual seu gênero?</strong></label><br>
+              <label for="fem">
+                <input type="radio" name="feminino" value="feminino" >feminino
+              </label><br>
+              <label for="masc">
+                <input type="radio" name="masculino" value="masculino">masculino
+              </label>
+            </div>
+    <br>
+            <div class="campo">
+                <label for="Escola"><strong>Você veio de qual rede escolar?</strong></label><br>
+                <select name="" id="escola">
+                <option selected disabled value="">selecione uma opção</option><br>
+                <option value="">rede pública</option>
+                <option value="">rede privada</option>
+                </select>
+            </div>
+    <br>
+            <fieldset class="grupo">
+                <div id="check">
+                    <label for="tec"><strong>selecione as tecnologias que você utiliza.</strong></label><br><br>
+                    <input type="checkbox" id="tec1" name="tec1" value="HTML">
+                    <label for="tec1">HTML</label><br>
+                    <input type="checkbox" id="tec2" name="tec2" value="CSS">
+                    <label for="tec2">CSS</label><br>
+                    <input type="checkbox" id="tec3" name="tec3" value="Python">
+                    <label for="tec3">Python</label><br>
+                    <input type="checkbox" id="tec4" name="tec4" value="JS">
+                    <label for="tec4">JavaScript</label><br>
+                    <input type="checkbox" id="tec5" name="tec5" value="Java">
+                    <label for="tec5">Java</label><br>
+                </div>
+            </fieldset>
+    
+            <div class="campo">
+                <br>
+                <label for="Experiencia"><strong>conte um pouco da sua experiência</strong></label><br>
+                <textarea name="experiencia" id="experiencia" row="8" style="width: 26em;"></textarea>
+            </div>
+    <br><br>
+            <button type="submit" class="botão">Enviar</button>
+        </main>
+        </form>
+</body>
+</html>
