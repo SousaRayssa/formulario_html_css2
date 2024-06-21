@@ -76,3 +76,8 @@ margin-right: 4%;
 #check{
     display: inline-block;
 }
+@media(max-width:678px){
+    form{
+        padding:10px
+    }
+}
